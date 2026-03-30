@@ -1,6 +1,7 @@
 import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
 import Stats from "./components/Stats/Stats";
+import Steps from "./components/Steps/Steps";
 
 const Layout = () => {
   return (
@@ -13,6 +14,7 @@ const Layout = () => {
       <main>
         <Banner />
         <Stats />
+        <Steps />
       </main>
 
     </>
