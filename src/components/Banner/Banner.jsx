@@ -5,7 +5,7 @@ import bannerImg from '../../assets/banner.png';
 const Banner = () => {
   return (
     <section 
-      className="max-w-7xl mx-auto px-4 py-15 flex flex-col lg:flex-row gap-10 items-center justify-between"
+      className="max-w-7xl mx-auto px-4 py-15 flex flex-col lg:flex-row gap-10 lg:gap-4 items-center justify-between"
     >
       {/* Banner Content */}
       <div className="space-y-8">
@@ -24,7 +24,7 @@ const Banner = () => {
 
           {/* Banner Content Heading */}
           <h1
-            className='max-w-159 font-extrabold leading-[1.2] text-[#101727] text-[45px] sm:text-[50px] lg:text-6xl xl:text-7xl text-center lg:text-left'
+            className='max-w-159 font-extrabold leading-[1.2] text-[#101727] text-5xl sm:text-6xl xl:text-7xl text-center lg:text-left'
           >
             Supercharge Your Digital Workflow
           </h1>

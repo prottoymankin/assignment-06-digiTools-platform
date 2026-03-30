@@ -3,7 +3,7 @@ import { Menu, ShoppingCart } from "lucide-react";
 const Navbar = () => {
   return (
     <nav 
-      className="max-w-300 mx-auto flex items-center justify-between px-4 py-6.5"
+      className="max-w-7xl mx-auto flex items-center justify-between px-4 py-6.5"
     >
       <div className="flex gap-2.5 items-center">
         <button className="btn btn-circle lg:hidden">
