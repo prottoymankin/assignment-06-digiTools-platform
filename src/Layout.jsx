@@ -1,5 +1,6 @@
 import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
+import Stats from "./components/Stats/Stats";
 
 const Layout = () => {
   return (
@@ -11,6 +12,7 @@ const Layout = () => {
 
       <main>
         <Banner />
+        <Stats />
       </main>
 
     </>
