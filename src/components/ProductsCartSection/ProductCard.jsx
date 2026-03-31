@@ -1,6 +1,6 @@
 import { Check } from "lucide-react";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, handleCartProducts }) => {
   const { name, description, price, period, tag, tagType, features, icon} = product;
 
   return (
@@ -41,6 +41,7 @@ const ProductCard = ({ product }) => {
       </ul>
 
       <button 
+        onClick={() => handleCartProducts(product)}
         className="cursor-pointer font-bold px-4 py-3 rounded-full text-white w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
       >
         Buy Now
