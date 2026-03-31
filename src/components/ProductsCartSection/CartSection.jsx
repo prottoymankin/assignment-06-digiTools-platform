@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import CartProducts from "./CartProducts";
 import EmptyCart from "./EmptyCart";
 
@@ -5,6 +6,7 @@ const CartSection = ({ cartProducts, setCartProducts, totalPrice, setTotalPrice 
   const handleCheckout = () => {
     setCartProducts([]);
     setTotalPrice(0);
+    toast.success("Checkout successful!");
   }
 
   return (

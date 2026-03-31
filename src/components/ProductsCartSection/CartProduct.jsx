@@ -1,12 +1,17 @@
+import { toast } from "react-toastify";
+
 const CartProduct = ({ product, setCartProducts, setTotalPrice }) => {
   const { id, icon, name, price } = product;
 
   const handleRemoveCartItem = () => {
     setTotalPrice(prev => prev - price);
+
     setCartProducts(prev => {
       const filteredProducts = prev.filter(product => product.id !== id);
       return filteredProducts;
     });
+
+    toast.success("Removed");
   }
 
   return (

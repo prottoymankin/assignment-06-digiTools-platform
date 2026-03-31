@@ -6,6 +6,7 @@ import Pricing from "./components/Pricing/Pricing";
 import Stats from "./components/Stats/Stats";
 import Steps from "./components/Steps/Steps";
 import ProductsCartSection from "./components/ProductsCartSection/ProductsCartSection";
+import { toast, ToastContainer } from "react-toastify";
 
 const Layout = () => {
   const [cartProducts, setCartProducts] = useState([]);
@@ -13,7 +14,13 @@ const Layout = () => {
 
   const handleCartProducts = (product) => {
     const isProductAlreadyExists = cartProducts.find(pdt => pdt.id === product.id);
-    if(isProductAlreadyExists) return;
+
+    if(isProductAlreadyExists) {
+      toast.warning("Already added to the cart");
+      return;
+    } 
+
+    toast.success("Added to the cart");
     setTotalPrice(prev => prev + product.price);
     setCartProducts(prev => [...prev, product]);
   }
@@ -46,6 +53,10 @@ const Layout = () => {
       </main>
 
       <Footer />
+
+      <ToastContainer 
+        theme="dark"
+      />
     </>
   );
 };
