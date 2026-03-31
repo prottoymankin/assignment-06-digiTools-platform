@@ -1,6 +1,5 @@
 import SectionHeader from "../SectionHeader/SectionHeader";
 import PricingCards from "./PricingCards";
-import PricingHeader from "./PricingHeader";
 
 const Pricing = () => {
   return (

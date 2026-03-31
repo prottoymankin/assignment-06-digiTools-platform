@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and streamline workflows",
+    "price": 79,
+    "period": "monthly",
+    "tag": "",
+    "tagType": "",
+    "features": ["50+ automations", "API access", "Custom workflows"],
+    "icon": "https://i.ibb.co.com/5WdhmT62/automation.png"
+  },
+  {
+    "id": 2,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes and cover letters",
+    "price": 15,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "https://i.ibb.co.com/whtYzgsq/resume.png"
+  },
+  {
+    "id": 3,
+    "name": "Social Media Content Kit",
+    "description": "Create engaging content across all platforms",
+    "price": 39,
+    "period": "monthly",
+    "tag": "",
+    "tagType": "",
+    "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
+    "icon": "https://i.ibb.co.com/nMz6cqJt/social.png"
+  },
+  {
+    "id": 4,
+    "name": "Email Marketing Suite",
+    "description": "Launch and manage email campaigns easily",
+    "price": 25,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best",
+    "features": ["Campaign builder", "Subscriber management", "Open rate analytics"],
+    "icon": "https://i.ibb.co.com/Xk2tvJ8V/email.png"
+  },
+  {
+    "id": 5,
+    "name": "SEO Optimization Tool",
+    "description": "Improve search engine rankings effectively",
+    "price": 30,
+    "period": "monthly",
+    "tag": "",
+    "tagType": "",
+    "features": ["Keyword research", "Site audit", "Rank tracking"],
+    "icon": "https://i.ibb.co.com/d0C8xMQt/seo.png"
+  },
+  {
+    "id": 6,
+    "name": "Design Assets Library",
+    "description": "Access premium UI kits and design resources",
+    "price": 19,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["UI kits", "Icons & illustrations", "Figma files"],
+    "icon": "https://i.ibb.co.com/Dgth6KKC/design.png"
+  },
+  {
+    "id": 7,
+    "name": "Analytics Dashboard Pro",
+    "description": "Track and visualize your business data",
+    "price": 49,
+    "period": "monthly",
+    "tag": "",
+    "tagType": "",
+    "features": ["Real-time data", "Custom reports", "Integration support"],
+    "icon": "https://i.ibb.co.com/mYWfFrK/dashboard.png"
+  },
+  {
+    "id": 8,
+    "name": "Content Writing Assistant",
+    "description": "Generate high-quality content faster",
+    "price": 20,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["AI writing", "Grammar check", "SEO suggestions"],
+    "icon": "https://i.ibb.co.com/KjVJCF8w/content-writing.png"
+  },
+  {
+    "id": 9,
+    "name": "Project Management Tool",
+    "description": "Organize tasks and collaborate with teams",
+    "price": 27,
+    "period": "monthly",
+    "tag": "",
+    "tagType": "",
+    "features": ["Task tracking", "Team collaboration", "Kanban boards"],
+    "icon": "https://i.ibb.co.com/cKCZtp6t/project-management.png"
+  },
+  {
+    "id": 10,
+    "name": "All-in-One Business Suite",
+    "description": "Everything you need to run your business",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Premium",
+    "tagType": "premium",
+    "features": ["All tools included", "Priority support", "Unlimited usage"],
+    "icon": "https://i.ibb.co.com/TMw0TdVy/layer.png"
+  }
+]
