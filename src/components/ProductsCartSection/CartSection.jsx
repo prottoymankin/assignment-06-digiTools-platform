@@ -17,7 +17,9 @@ const CartSection = ({ cartProducts, setCartProducts, totalPrice, setTotalPrice 
             <h2 className="font-bold text-2xl text-[#101727]">Your Cart</h2>
             
             <CartProducts
-              cartProducts = {cartProducts} 
+              cartProducts = {cartProducts}
+              setCartProducts = {setCartProducts}
+              setTotalPrice = {setTotalPrice}
             />
 
             <div className="flex items-center justify-between">

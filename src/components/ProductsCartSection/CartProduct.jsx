@@ -1,5 +1,13 @@
-const CartProduct = ({ product }) => {
-  const { icon, name, price } = product;
+const CartProduct = ({ product, setCartProducts, setTotalPrice }) => {
+  const { id, icon, name, price } = product;
+
+  const handleRemoveCartItem = () => {
+    setTotalPrice(prev => prev - price);
+    setCartProducts(prev => {
+      const filteredProducts = prev.filter(product => product.id !== id);
+      return filteredProducts;
+    });
+  }
 
   return (
     <div 
@@ -18,7 +26,10 @@ const CartProduct = ({ product }) => {
         </div>
       </div>
 
-      <button className="border border-[#FF3980] btn font-bold text-[#FF3980] hover:bg-white">
+      <button
+        onClick={handleRemoveCartItem} 
+        className="border border-[#FF3980] btn font-bold text-[#FF3980] hover:bg-white"
+      >
         Remove
       </button>
     </div>

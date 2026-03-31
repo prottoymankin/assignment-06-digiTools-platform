@@ -1,6 +1,6 @@
 import CartProduct from "./CartProduct";
 
-const CartProducts = ( {cartProducts} ) => {
+const CartProducts = ( {cartProducts, setCartProducts, setTotalPrice } ) => {
   return (
     <div className="space-y-4">
       {
@@ -8,6 +8,8 @@ const CartProducts = ( {cartProducts} ) => {
           <CartProduct 
             key = {product.id}
             product = {product}
+            setCartProducts = {setCartProducts}
+            setTotalPrice = {setTotalPrice}
           />
         ))
       }
