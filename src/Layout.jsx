@@ -27,7 +27,6 @@ const Layout = () => {
 
   return (
     <>
-
       <header className="border border-[#F2F2F2]">
         <Navbar 
           cartProducts = {cartProducts}
@@ -36,7 +35,6 @@ const Layout = () => {
 
       <main>
         <Banner />
-
         <Stats />
 
         <ProductsCartSection
@@ -48,14 +46,13 @@ const Layout = () => {
         />
 
         <Steps />
-
         <Pricing />
       </main>
 
       <Footer />
 
       <ToastContainer 
-        theme="dark"
+        theme = "dark"
       />
     </>
   );

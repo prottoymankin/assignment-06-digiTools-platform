@@ -3,22 +3,23 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 import Tabs from "./Tabs";
 import ProductCards from "./ProductCards";
 import CartSection from "./CartSection";
+import Loader from "./Loader";
 
 const fetchProductsData = async() => {
   const response = await fetch("/Products.json");
   return response.json();
 }
 
+const productsDataPromise = fetchProductsData();
+
 const ProductsCartSection = ({ cartProducts, handleCartProducts, setCartProducts, totalPrice, setTotalPrice }) => {
   const [activeTab, setActiveTab] = useState('Products');
-
-  const productsDataPromise = fetchProductsData();
 
   return (
     <section className="px-4 py-15 lg:py-30 max-w-7xl mx-auto">
       <SectionHeader
-        title = {"Premium Digital Tools"}
-        description = {"Choose from our curated collection of premium digital products designed to boost your productivity and creativity."}
+        title = "Premium Digital Tools"
+        description = "Choose from our curated collection of premium digital products designed to boost your productivity and creativity."
       />
 
       <Tabs
@@ -29,7 +30,7 @@ const ProductsCartSection = ({ cartProducts, handleCartProducts, setCartProducts
 
       {
         activeTab === "Products" && (
-          <Suspense>
+          <Suspense fallback={<Loader />}>
             <ProductCards
               productsDataPromise = {productsDataPromise}
               handleCartProducts = {handleCartProducts}

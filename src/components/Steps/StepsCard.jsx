@@ -14,12 +14,19 @@ const StepsCard = ({ card }) => {
       <div 
         className="bg-linear-to-r from-[#4F39F6]/10 to-[#9514FA]/10 flex items-center justify-center h-25 w-25 rounded-full"
       >
-        <img src={icon} alt="" />
+        <img 
+          src={icon} 
+          alt="" 
+        />
       </div>
 
-      <h3 className="font-bold text-2xl text-[#101727]"> {title}</h3>
+      <h3 className="font-bold text-2xl text-[#101727]">
+        {title}
+      </h3>
 
-      <p className="text-[#627382]"> {description} </p>
+      <p className="text-[#627382]">
+        {description}
+      </p>
     </div>
   );
 };

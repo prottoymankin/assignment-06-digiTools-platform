@@ -17,9 +17,13 @@ const PricingCard = ({ pricingPlan }) => {
         )
       } 
 
-      <h3 className="font-bold text-2xl text-[#101727]"> {title} </h3>
+      <h3 className="font-bold text-2xl text-[#101727]">
+        {title}
+      </h3>
 
-      <p className="text-[#627382]"> {description} </p>
+      <p className="text-[#627382]">
+        {description}
+      </p>
 
       <p className="font-bold text-[40px] text-[#101727]">
         ${price}<span className="font-normal text-xl text-[#627382]">/month</span>
@@ -32,7 +36,10 @@ const PricingCard = ({ pricingPlan }) => {
               key = {index}
               className="flex gap-2 items-center text-[#627382]"
             >
-              <span className="text-[#30B868]"> <Check /> </span>
+              <span className="text-[#30B868]"> 
+                <Check /> 
+              </span>
+              
               <span>{feature}</span> 
             </li>
           ))

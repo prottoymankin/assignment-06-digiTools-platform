@@ -6,14 +6,20 @@ const Tabs = ({ cartProducts, activeTab, setActiveTab }) => {
     <div className="flex justify-center mb-10">
       <button
         onClick={() => setActiveTab("Products")}
-        className={ `cursor-pointer font-bold px-4 py-3 rounded-full ${activeTab === 'Products' ? activeStyle : inActiveStyle}` }
+        className={
+          `cursor-pointer font-bold px-4 py-3 rounded-full 
+          ${activeTab === 'Products' ? activeStyle : inActiveStyle}`
+        }
       >
         Products
       </button>
 
       <button
         onClick={() => setActiveTab("Cart")}
-        className={ `cursor-pointer font-bold px-4 py-3 rounded-full ${activeTab === 'Cart' ? activeStyle : inActiveStyle}` }
+        className={
+          `cursor-pointer font-bold px-4 py-3 rounded-full 
+          ${activeTab === 'Cart' ? activeStyle : inActiveStyle}`
+        }
       >
         Cart({cartProducts.length})
       </button>

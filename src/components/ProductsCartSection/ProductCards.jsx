@@ -1,7 +1,6 @@
 import { use } from "react";
 import ProductCard from "./ProductCard";
 
-
 const ProductCards = ({ productsDataPromise, handleCartProducts }) => {
   const productsData = use(productsDataPromise);
 

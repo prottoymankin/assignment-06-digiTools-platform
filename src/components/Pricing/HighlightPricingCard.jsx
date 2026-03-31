@@ -1,7 +1,7 @@
 import { Check } from "lucide-react";
 
 const HighlightPricingCard = ({ pricingPlan }) => {
-  const { title, price, description, features, buttonText, badge} = pricingPlan;
+  const { title, price, description, features, buttonText, badge } = pricingPlan;
 
   return (
     <div 
@@ -39,10 +39,14 @@ const HighlightPricingCard = ({ pricingPlan }) => {
         }
       </ul>
 
-      <button className="bg-white cursor-pointer font-bold px-4 py-3 rounded-full w-full">
+      <button 
+        className="bg-white cursor-pointer font-bold px-4 py-3 rounded-full w-full"
+      >
         <span
           className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent"
-        > {buttonText} </span>
+        > 
+          {buttonText} 
+        </span>
       </button>
     </div>
   );

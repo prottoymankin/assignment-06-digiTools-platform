@@ -16,7 +16,9 @@ const CartSection = ({ cartProducts, setCartProducts, totalPrice, setTotalPrice 
           <EmptyCart />
         ) : (
           <div className="space-y-6">
-            <h2 className="font-bold text-2xl text-[#101727]">Your Cart</h2>
+            <h2 className="font-bold text-2xl text-[#101727]">
+              Your Cart
+            </h2>
             
             <CartProducts
               cartProducts = {cartProducts}
@@ -25,8 +27,13 @@ const CartSection = ({ cartProducts, setCartProducts, totalPrice, setTotalPrice 
             />
 
             <div className="flex items-center justify-between">
-              <span className="text-[#627382]">Total:</span>
-              <span className="font-bold text-2xl text-[#101727]">${totalPrice}</span>
+              <span className="text-[#627382]">
+                Total:
+              </span>
+              
+              <span className="font-bold text-2xl text-[#101727]">
+                ${totalPrice}
+              </span>
             </div>
 
             <button 

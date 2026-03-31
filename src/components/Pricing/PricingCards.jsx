@@ -58,15 +58,17 @@ const PricingCards = () => {
     <div className="grid gap-7.5 sm:grid-cols-2 lg:grid-cols-3">
       {
         pricingPlans.map(pricingPlan => (
-          pricingPlan.highlight 
-          ? <HighlightPricingCard
+          pricingPlan.highlight ? (
+            <HighlightPricingCard
               key = {pricingPlan.id}
               pricingPlan = {pricingPlan}
             />
-          : <PricingCard
+          ) : (
+            <PricingCard
               key = {pricingPlan.id}
               pricingPlan = {pricingPlan}
-            /> 
+            />
+          ) 
         ))
       }
     </div>

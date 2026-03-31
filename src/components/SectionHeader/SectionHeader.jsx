@@ -7,7 +7,9 @@ const SectionHeader = ({ title, description }) => {
         {title}
       </h2>
 
-      <p className="text-[#627382]"> {description} </p>
+      <p className="text-[#627382]">
+        {description}
+      </p>
     </header>
   );
 };
