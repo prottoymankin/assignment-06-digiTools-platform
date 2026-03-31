@@ -5,8 +5,8 @@
     "description": "Automate repetitive tasks and streamline workflows",
     "price": 79,
     "period": "monthly",
-    "tag": "",
-    "tagType": "",
+    "tag": "Popular",
+    "tagType": "popular",
     "features": ["50+ automations", "API access", "Custom workflows"],
     "icon": "https://i.ibb.co.com/5WdhmT62/automation.png"
   },
@@ -27,8 +27,8 @@
     "description": "Create engaging content across all platforms",
     "price": 39,
     "period": "monthly",
-    "tag": "",
-    "tagType": "",
+    "tag": "New",
+    "tagType": "new",
     "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
     "icon": "https://i.ibb.co.com/nMz6cqJt/social.png"
   },
@@ -49,8 +49,8 @@
     "description": "Improve search engine rankings effectively",
     "price": 30,
     "period": "monthly",
-    "tag": "",
-    "tagType": "",
+    "tag": "Popular",
+    "tagType": "popular",
     "features": ["Keyword research", "Site audit", "Rank tracking"],
     "icon": "https://i.ibb.co.com/d0C8xMQt/seo.png"
   },
@@ -71,8 +71,8 @@
     "description": "Track and visualize your business data",
     "price": 49,
     "period": "monthly",
-    "tag": "",
-    "tagType": "",
+    "tag": "Best Seller",
+    "tagType": "best",
     "features": ["Real-time data", "Custom reports", "Integration support"],
     "icon": "https://i.ibb.co.com/mYWfFrK/dashboard.png"
   },
@@ -93,20 +93,9 @@
     "description": "Organize tasks and collaborate with teams",
     "price": 27,
     "period": "monthly",
-    "tag": "",
-    "tagType": "",
+    "tag": "New",
+    "tagType": "new",
     "features": ["Task tracking", "Team collaboration", "Kanban boards"],
     "icon": "https://i.ibb.co.com/cKCZtp6t/project-management.png"
-  },
-  {
-    "id": 10,
-    "name": "All-in-One Business Suite",
-    "description": "Everything you need to run your business",
-    "price": 99,
-    "period": "yearly",
-    "tag": "Premium",
-    "tagType": "premium",
-    "features": ["All tools included", "Priority support", "Unlimited usage"],
-    "icon": "https://i.ibb.co.com/TMw0TdVy/layer.png"
   }
 ]
