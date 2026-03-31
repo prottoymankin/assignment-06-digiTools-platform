@@ -1,4 +1,5 @@
 import Banner from "./components/Banner/Banner";
+import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Pricing from "./components/Pricing/Pricing";
 import Stats from "./components/Stats/Stats";
@@ -19,6 +20,7 @@ const Layout = () => {
         <Pricing />
       </main>
 
+      <Footer />
     </>
   );
 };
