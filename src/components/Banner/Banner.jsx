@@ -41,7 +41,7 @@ const Banner = ({ setActiveTab }) => {
           <a 
             onClick={() => setActiveTab("Products")}
             href="#product-cart-container" 
-            className="border border-[#4F39F6] bg-linear-to-r from-[#4F39F6] to-[#9514FA] cursor-pointer font-semibold rounded-full text-base text-white px-4 py-3 w-full max-w-70 sm:w-fit"
+            className="border border-[#4F39F6] bg-linear-to-r from-[#4F39F6] to-[#9514FA] cursor-pointer font-semibold rounded-full text-base text-white px-4 py-3 w-full max-w-70 sm:w-fit text-center"
           >
             Explore Products
           </a>
