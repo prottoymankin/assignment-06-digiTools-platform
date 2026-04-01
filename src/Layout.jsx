@@ -7,6 +7,7 @@ import Stats from "./components/Stats/Stats";
 import Steps from "./components/Steps/Steps";
 import ProductsCartSection from "./components/ProductsCartSection/ProductsCartSection";
 import { toast, ToastContainer } from "react-toastify";
+import TransformSection from "./components/TransformSection/TransformSection";
 
 const Layout = () => {
   const [cartProducts, setCartProducts] = useState([]);
@@ -47,6 +48,7 @@ const Layout = () => {
 
         <Steps />
         <Pricing />
+        <TransformSection />
       </main>
 
       <Footer />
