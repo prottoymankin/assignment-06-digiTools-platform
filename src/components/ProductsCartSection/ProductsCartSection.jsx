@@ -12,11 +12,10 @@ const fetchProductsData = async() => {
 
 const productsDataPromise = fetchProductsData();
 
-const ProductsCartSection = ({ cartProducts, handleCartProducts, setCartProducts, totalPrice, setTotalPrice }) => {
-  const [activeTab, setActiveTab] = useState('Products');
+const ProductsCartSection = ({ cartProducts, handleCartProducts, setCartProducts, totalPrice, setTotalPrice, activeTab, setActiveTab }) => {
 
   return (
-    <section className="px-4 py-15 lg:py-30 max-w-7xl mx-auto">
+    <section id="product-cart-container" className="px-4 py-15 lg:py-30 max-w-7xl mx-auto">
       <SectionHeader
         title = "Premium Digital Tools"
         description = "Choose from our curated collection of premium digital products designed to boost your productivity and creativity."

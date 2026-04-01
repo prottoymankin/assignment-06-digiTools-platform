@@ -12,6 +12,7 @@ import TransformSection from "./components/TransformSection/TransformSection";
 const Layout = () => {
   const [cartProducts, setCartProducts] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
+  const [activeTab, setActiveTab] = useState('Products');
 
   const handleCartProducts = (product) => {
     toast.success("Added to the cart");
@@ -24,6 +25,7 @@ const Layout = () => {
       <header className="border border-[#F2F2F2]">
         <Navbar 
           cartProducts = {cartProducts}
+          setActiveTab = {setActiveTab}
         />
       </header>
 
@@ -37,6 +39,8 @@ const Layout = () => {
           setCartProducts = {setCartProducts}
           totalPrice = {totalPrice}
           setTotalPrice = {setTotalPrice}
+          activeTab = {activeTab}
+          setActiveTab = {setActiveTab}
         />
 
         <Steps />

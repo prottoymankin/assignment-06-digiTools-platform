@@ -38,11 +38,11 @@ const Banner = () => {
         <div 
           className='flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start'
         >
-          <button 
+          <a href="#product-cart-container" 
             className="border border-[#4F39F6] bg-linear-to-r from-[#4F39F6] to-[#9514FA] cursor-pointer font-semibold rounded-full text-base text-white px-4 py-3 w-full max-w-70 sm:w-fit"
           >
             Explore Products
-          </button>
+          </a>
 
           <button 
             className="border border-[#4F39F6] cursor-pointer flex gap-2.5 items-center justify-center font-semibold rounded-full text-base px-4 py-3 w-full max-w-70 sm:w-fit"

@@ -1,6 +1,6 @@
 import { Menu, ShoppingCart } from "lucide-react";
 
-const Navbar = ({ cartProducts }) => {
+const Navbar = ({ cartProducts, setActiveTab }) => {
   return (
     <nav 
       className="max-w-7xl mx-auto flex items-center justify-between px-4 py-6.5"
@@ -28,7 +28,11 @@ const Navbar = ({ cartProducts }) => {
       </ul>
 
       <div className="flex gap-4 items-center">
-        <button className="btn btn-circle relative">
+        <a
+          onClick={() => setActiveTab("Cart")} 
+          href="#product-cart-container" 
+          className="btn btn-circle relative"
+        >
           {
             cartProducts.length > 0 && (
               <span
@@ -40,7 +44,7 @@ const Navbar = ({ cartProducts }) => {
           }
 
           <ShoppingCart />
-        </button>
+        </a>
 
         <button className="btn rounded-full hidden md:block">
           Login
