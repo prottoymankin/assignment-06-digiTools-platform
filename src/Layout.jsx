@@ -30,7 +30,10 @@ const Layout = () => {
       </header>
 
       <main>
-        <Banner />
+        <Banner 
+          setActiveTab = {setActiveTab}
+        />
+
         <Stats />
 
         <ProductsCartSection

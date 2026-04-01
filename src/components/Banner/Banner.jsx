@@ -2,7 +2,7 @@ import badgeDotImg from '../../assets/batchDot.png';
 import playImg from '../../assets/Play.png';
 import bannerImg from '../../assets/banner.png';
 
-const Banner = () => {
+const Banner = ({ setActiveTab }) => {
   return (
     <section 
       className="max-w-7xl mx-auto px-4 py-15 flex flex-col lg:flex-row gap-10 lg:gap-4 items-center justify-between"
@@ -38,7 +38,9 @@ const Banner = () => {
         <div 
           className='flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start'
         >
-          <a href="#product-cart-container" 
+          <a 
+            onClick={() => setActiveTab("Products")}
+            href="#product-cart-container" 
             className="border border-[#4F39F6] bg-linear-to-r from-[#4F39F6] to-[#9514FA] cursor-pointer font-semibold rounded-full text-base text-white px-4 py-3 w-full max-w-70 sm:w-fit"
           >
             Explore Products
