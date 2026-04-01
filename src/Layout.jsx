@@ -14,13 +14,6 @@ const Layout = () => {
   const [totalPrice, setTotalPrice] = useState(0);
 
   const handleCartProducts = (product) => {
-    const isProductAlreadyExists = cartProducts.find(pdt => pdt.id === product.id);
-
-    if(isProductAlreadyExists) {
-      toast.warning("Already added to the cart");
-      return;
-    } 
-
     toast.success("Added to the cart");
     setTotalPrice(prev => prev + product.price);
     setCartProducts(prev => [...prev, product]);
@@ -55,6 +48,7 @@ const Layout = () => {
 
       <ToastContainer 
         theme = "dark"
+        autoClose = {1000}
       />
     </>
   );

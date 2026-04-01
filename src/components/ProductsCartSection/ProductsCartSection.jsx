@@ -34,6 +34,7 @@ const ProductsCartSection = ({ cartProducts, handleCartProducts, setCartProducts
             <ProductCards
               productsDataPromise = {productsDataPromise}
               handleCartProducts = {handleCartProducts}
+              cartProducts = {cartProducts}
             />
           </Suspense>
         )

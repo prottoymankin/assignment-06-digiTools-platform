@@ -1,7 +1,26 @@
 import { Check } from "lucide-react";
+import { useState } from "react";
+import { toast } from "react-toastify";
 
-const ProductCard = ({ product, handleCartProducts }) => {
-  const { name, description, price, period, tag, tagType, features, icon} = product;
+const ProductCard = ({ product, handleCartProducts, cartProducts }) => {
+  const { id, name, description, price, period, tag, tagType, features, icon} = product;
+
+  const [isAdd, setIsAdd] = useState(false);
+
+  const handleBuyNowBtn = () => {
+    const isProductAlreadyExists = cartProducts.find(pdt => pdt.id === id);
+    
+    if(isProductAlreadyExists) {
+      toast.warning("Already added to the cart");
+      return;
+    } 
+
+    handleCartProducts(product);
+    setIsAdd(true);
+    setTimeout(() => {
+      setIsAdd(false);
+    }, 2000);
+  } 
 
   return (
     <div 
@@ -58,10 +77,12 @@ const ProductCard = ({ product, handleCartProducts }) => {
       </ul>
 
       <button 
-        onClick={() => handleCartProducts(product)}
-        className="cursor-pointer font-bold px-4 py-3 rounded-full text-white w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
+        onClick={handleBuyNowBtn}
+        className="cursor-pointer font-bold px-4 py-3 rounded-full text-white w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] active:scale-95 transition duration-300"
       >
-        Buy Now
+        {
+          isAdd ? "Added to cart" : "Buy Now"
+        }
       </button>
     </div>
   );

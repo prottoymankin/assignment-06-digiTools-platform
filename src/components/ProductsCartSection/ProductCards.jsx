@@ -1,7 +1,7 @@
 import { use } from "react";
 import ProductCard from "./ProductCard";
 
-const ProductCards = ({ productsDataPromise, handleCartProducts }) => {
+const ProductCards = ({ productsDataPromise, handleCartProducts, cartProducts }) => {
   const productsData = use(productsDataPromise);
 
   return (
@@ -12,6 +12,7 @@ const ProductCards = ({ productsDataPromise, handleCartProducts }) => {
             key = {product.id}
             product = {product}
             handleCartProducts = {handleCartProducts}
+            cartProducts = {cartProducts}
           />
         ))
       }

@@ -38,7 +38,7 @@ const CartSection = ({ cartProducts, setCartProducts, totalPrice, setTotalPrice 
 
             <button 
               onClick={handleCheckout}
-              className="cursor-pointer font-bold px-4 py-3 rounded-full text-white w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
+              className="cursor-pointer font-bold px-4 py-3 rounded-full text-white w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] active:scale-95 transition duration-300"
             >
               Process to Checkout
             </button>
